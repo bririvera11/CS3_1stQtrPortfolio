@@ -1,0 +1,15 @@
+<script>
+
+    let age = 0;
+    let maxAge = 100;
+    let numPerDay = 0;
+    let totalRequired = (numPerDay * 365) * (maxAge - age);
+
+    age = prompt("What is your current age?");
+    maxAge = prompt("What is your maximum age?");
+    numPerDay = prompt("Estimated daily amount of consumed snacks?");
+    totalRequired = (numPerDay * 365) * (maxAge - age);
+
+    document.write("You will need " + totalRequired , " to last you until the ripe old age of " + maxAge + "!");
+
+</script>
