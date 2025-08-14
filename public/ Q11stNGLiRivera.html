@@ -1,15 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> YUNG SNACKS MOUH!!!</h1>
+    <label> How ancient are u? 
+        <input id = "Age" /> 
+    </label> </br/>
+
+      <label> Gaano ka katagal mabobohai?? 
+        <input id = "maxAge" /> 
+    </label></br/>
+
+    <label> Bigbackery??  
+        <input id = "numPerDay" />
+    </label></br/>
+
+
+    <button onclick="acceptInput()"> Accept Input </button> </p>
+    <p> RESULT: 
+        <span id= "input"> 
+        </span>
+    </p>
+
+    <script>
+        function acceptInput() {
+            let dInput = document.getElementById("Age").value;
+            document.getElementById("input").innerHTML = <b> $(dInput) </b>;
+       
+            let dInput = document.getElementById("maxAge").value;
+            document.getElementById("input").innerHTML = <b> $(dInput) </b>;
+       
+            let dInput = document.getElementById("numPerDay").value;
+            document.getElementById("input").innerHTML = <b> $(dInput) </b>;
+        }
+    </script>
+
+</body>
+
+
 <script>
+    //let age = 0;
+    //let maxAge = 100;
+    //let numPerDay = 0;
+    //let totalRequired = (numPerDay * 365) * (maxAge - age);
 
-    let age = 0;
-    let maxAge = 100;
-    let numPerDay = 0;
-    let totalRequired = (numPerDay * 365) * (maxAge - age);
+    //age =window.prompt("How old is u? ");
+   // maxAge = window.prompt("Maximum age mo para mabohai? ");
+    //numPerDay = window.prompt("Gaano ka kadalas magbigback/magsnacks sa isang araw? ");
+    //totalRequired = (numPerDay * 365) * (maxAge - age);
 
-    age = prompt("What is your current age?");
-    maxAge = prompt("What is your maximum age?");
-    numPerDay = prompt("Estimated daily amount of consumed snacks?");
-    totalRequired = (numPerDay * 365) * (maxAge - age);
-
-    document.write("You will need " + totalRequired , " to last you until the ripe old age of " + maxAge + "!");
-
+    //if (sure = window.confirm("Shore ka ba diyan??? "))
+{
+    //let totalRequired = (Number(numPerDay * 365)) * (Number(maxAge) - Number (age));
+    //document.write("You will need " + totalRequired , " to last you until the ripe old age of " + maxAge + "!");
+    //alert (`You will need ${totalRequired} to last you until the ripe age of ${maxAge}`);
+    //console.log ("You will need " + totalRequired , " to last you until the ripe old age of " + maxAge + "!");
+}
+    else
+    {
+        window.alert ("Click mo nalang ulit, teynks! ")
+    }
 </script>
