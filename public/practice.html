@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2> Practice for Summative Exam </h2>
+
+    <label> Name:
+        <input id = "name"/>
+        </label> </br>
+    <button onclick="even()"> Even or Odd </button>
+        <p> Is it odd or even?
+        <span id= "result">
+        </span> </p>
+   <script>
+        function even() {
+            let name = document.getElementById("name").value;
+            let length = name.length;
+
+            let result = length % 2 == 0 ? "Even" : "Odd";
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+        
+
+</body>
+</html>
+
